@@ -84,6 +84,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize scroll animations
   initScrollAnimations();
+
+  // Mobile hamburger menu toggle
+  var navToggle = document.getElementById('nav-toggle');
+  var headerNav = document.querySelector('header nav');
+  if (navToggle && headerNav) {
+    navToggle.addEventListener('click', function () {
+      var isOpen = headerNav.classList.toggle('open');
+      navToggle.classList.toggle('active', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when any nav link is clicked
+    var navLinks = headerNav.querySelectorAll('a');
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        headerNav.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 });
 
 /* Promotion countdown */

@@ -17,7 +17,17 @@
         <a href="index.html">
           <img src="images/logo.png" alt="Decor4U" />
         </a>
-        <nav>
+        <button
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="primary-navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="primary-navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about_us.html">About Us</a></li>
@@ -36,14 +46,23 @@
               <div>
                 <img src="images/our_service/promo.jpg" alt="" />
               </div>
-              <p>Book today and get a 20% discount!</p>
-              The promotion ends in
-              <div>
-                <span id="countdown">
-                  <span id="days">0</span> Days <span id="hrs">0</span> Hours
-                  <span id="mins">0</span> Minutes
-                  <span id="secs">0</span> Seconds
-                </span>
+              <p class="promo-headline">
+                <strong>Book today and get a 20% discount!</strong>
+              </p>
+              <p class="promo-sub">The promotion ends in</p>
+              <div id="countdown" class="countdown">
+                <div class="time">
+                  <span id="days">0</span><small>Days</small>
+                </div>
+                <div class="time">
+                  <span id="hrs">0</span><small>Hours</small>
+                </div>
+                <div class="time">
+                  <span id="mins">0</span><small>Minutes</small>
+                </div>
+                <div class="time">
+                  <span id="secs">0</span><small>Seconds</small>
+                </div>
               </div>
             </div>
             <h2 class="scroll-animate">Package</h2>
@@ -52,45 +71,50 @@
               refreshing your space, our flexible packages are designed to suit
               your lifestyle and budget.
             </p>
-            <table class="services-table scroll-animate">
-              <thead>
-                <tr>
-                  <th>Service</th>
-                  <th>Description</th>
-                  <th>Starting Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Interior Consultation</td>
-                  <td>
-                    1-on-1 consultation to help you define your style and needs
-                  </td>
-                  <td>$75/hour</td>
-                </tr>
-                <tr>
-                  <td>Room Makeover</td>
-                  <td>
-                    Complete redesign of a selected room including layout,
-                    color, and decor
-                  </td>
-                  <td>$500+</td>
-                </tr>
-                <tr>
-                  <td>Furniture Arrangement</td>
-                  <td>Optimizing your space by arranging existing furniture</td>
-                  <td>$200/room</td>
-                </tr>
-                <tr>
-                  <td>Online Style Board</td>
-                  <td>
-                    Receive a custom mood board with links to buy recommended
-                    items
-                  </td>
-                  <td>$150/project</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive scroll-animate">
+              <table class="services-table">
+                <thead>
+                  <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Starting Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Service">Interior Consultation</td>
+                    <td data-label="Description">
+                      1-on-1 consultation to help you define your style and
+                      needs
+                    </td>
+                    <td data-label="Starting Price">$75/hour</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service">Room Makeover</td>
+                    <td data-label="Description">
+                      Complete redesign of a selected room including layout,
+                      color, and decor
+                    </td>
+                    <td data-label="Starting Price">$500+</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service">Furniture Arrangement</td>
+                    <td data-label="Description">
+                      Optimizing your space by arranging existing furniture
+                    </td>
+                    <td data-label="Starting Price">$200/room</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service">Online Style Board</td>
+                    <td data-label="Description">
+                      Receive a custom mood board with links to buy recommended
+                      items
+                    </td>
+                    <td data-label="Starting Price">$150/project</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <div class="interest">
