@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Decor4U service packages—from consultations to complete room makeovers." />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Decor4U | Decor Ideas</title>
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Decor4U" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="our_service.html">Our Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="our_service">
+        <h1>Our Service</h1>
+        <div class="package">
+          <div class="content">
+            <div id="promo" class="scroll-animate-scale">
+              <div>
+                <img src="images/our_service/promo.jpg" alt="" />
+              </div>
+              <p>Book today and get a 20% discount!</p>
+              The promotion ends in
+              <div>
+                <span id="countdown">
+                  <span id="days">0</span> Days <span id="hrs">0</span> Hours
+                  <span id="mins">0</span> Minutes
+                  <span id="secs">0</span> Seconds
+                </span>
+              </div>
+            </div>
+            <h2 class="scroll-animate">Package</h2>
+            <p class="scroll-animate">
+              Whether you're starting from scratch or just need a little help
+              refreshing your space, our flexible packages are designed to suit
+              your lifestyle and budget.
+            </p>
+            <table class="services-table scroll-animate">
+              <thead>
+                <tr>
+                  <th>Service</th>
+                  <th>Description</th>
+                  <th>Starting Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Interior Consultation</td>
+                  <td>
+                    1-on-1 consultation to help you define your style and needs
+                  </td>
+                  <td>$75/hour</td>
+                </tr>
+                <tr>
+                  <td>Room Makeover</td>
+                  <td>
+                    Complete redesign of a selected room including layout,
+                    color, and decor
+                  </td>
+                  <td>$500+</td>
+                </tr>
+                <tr>
+                  <td>Furniture Arrangement</td>
+                  <td>Optimizing your space by arranging existing furniture</td>
+                  <td>$200/room</td>
+                </tr>
+                <tr>
+                  <td>Online Style Board</td>
+                  <td>
+                    Receive a custom mood board with links to buy recommended
+                    items
+                  </td>
+                  <td>$150/project</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="interest">
+          <div class="content">
+            <form
+              action="https://exanple.com/redball/survey"
+              method="POST"
+              class="scroll-animate">
+              <fieldset>
+                <legend>What does your apartment look like?</legend>
+                <div class="formRow">
+                  <div class="left">
+                    <label for="roomsNu">How many rooms?*</label>
+                  </div>
+                  <div class="right">
+                    <input
+                      type="number"
+                      id="roomsNu"
+                      min="1"
+                      max="10"
+                      required />
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <label for="budget">What is your budget?</label>
+                  </div>
+                  <div class="right">
+                    <input
+                      type="range"
+                      id="budget"
+                      min="0"
+                      max="10"
+                      step="1"
+                      value="5" />
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <label for="rooms">What rooms do you have?</label>
+                  </div>
+                  <div class="right">
+                    <select name="rooms" id="rooms" size="3" multiple>
+                      <option value="badroom">Bed Room</option>
+                      <option value="kitchen">Kitchen Room</option>
+                      <option value="Washroom" selected>Washroom</option>
+                      <option value="living">Living Room</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <span class="question">Do you own the apartment?*</span>
+                  </div>
+                  <div class="right">
+                    <div>
+                      <input type="radio" name="own" id="oYes" value="200" />
+                      <label for="oYes">Yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="own" id="oNo" value="220" />
+                      <label for="oNo">No</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <label for="style">Preferred decor style</label>
+                  </div>
+                  <div class="right">
+                    <input
+                      list="styleList"
+                      name="style"
+                      id="style"
+                      placeholder="e.g. Minimalist" />
+                    <datalist id="styleList">
+                      <option value="Minimalist"></option>
+                      <option value="Boho"></option>
+                      <option value="Scandinavian"></option>
+                      <option value="Modern"></option>
+                      <option value="Vintage"></option>
+                      <option value="Industrial"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <label for="file">Attach your room photo</label>
+                  </div>
+                  <div class="right">
+                    <input type="file" id="file" name="file" />
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <span class="question"
+                      >How many people live in your place?*</span
+                    >
+                  </div>
+                  <div class="right">
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="people_1"
+                        name="people"
+                        value="1" />1
+                      <input
+                        type="checkbox"
+                        id="people_2"
+                        name="people"
+                        value="2" />2
+                      <input
+                        type="checkbox"
+                        id="people_3"
+                        name="people"
+                        value="3" />3
+                      <input
+                        type="checkbox"
+                        id="people_4"
+                        name="people"
+                        value="4" />4
+                      <input
+                        type="checkbox"
+                        id="people_5"
+                        name="people"
+                        value="5" />5
+                    </div>
+                  </div>
+                </div>
+                <div class="formRow">
+                  <div class="left">
+                    <label for="date">When would you like to decorate?</label>
+                  </div>
+                  <div class="right">
+                    <input type="date" name="date" id="date" />
+                  </div>
+                </div>
+              </fieldset>
+              <div class="smt">
+                <input
+                  type="button"
+                  class="btn"
+                  value="Submit"
+                  onclick="estimate()" />
+                <input type="reset" class="btn-reset" value="Reset" />
+              </div>
+            </form>
+            <h2 class="scroll-animate">Estimate Cost</h2>
+            <p class="scroll-animate">
+              (The cost will be estimated after you fill out the form.)
+            </p>
+            <div class="cost scroll-animate-scale" id="cost">
+              <strong>$xxx</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-contact">
+        <div class="left">
+          <h4>Quick Links</h4>
+          <div><a href="index.html">Home</a></div>
+          <div><a href="about_us.html">About Us</a></div>
+          <div><a href="our_service.html">Our Services</a></div>
+          <div><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="right">
+          <h4>Contact us</h4>
+          <div class="title">
+            <div>
+              <a href="mailto:contact@decor4u.com"> contact@decor4u.com </a>
+            </div>
+            <div>
+              tel:<a href="tel:11231231234"> +1 123 123 1234 </a>
+              <br />
+            </div>
+            <div><address>Vancouver, Canada</address></div>
+          </div>
+          <div class="icon">
+            <img src="images/facebook.png" alt="facebook" />
+            <img src="images/linkedin.png" alt="linkedin" />
+            <img src="images/instagram.png" alt="instagram" />
+          </div>
+        </div>
+      </div>
+      <div class="Copyright">Copyright &copy; 2025. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
